@@ -1,0 +1,34 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Antenas</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>ID</th>
+        <th>Comuna</th>
+        <th>Región</th>
+      </tr>
+      {% for antenas_operativas in antenas_operativas %}
+      <tr>
+        <td>{{antenas_operativas[0]}}</td>
+        <td>{{antenas_operativas[1]}}</td>
+        <td>{{antenas_operativas[2]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

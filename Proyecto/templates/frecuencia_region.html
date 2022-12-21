@@ -1,0 +1,32 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Antenas</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Región</th>
+        <th>Frecuencia</th>
+      </tr>
+      {% for frecuencia_region in frecuencia_region %}
+      <tr>
+        <td>{{frecuencia_region[1]}}</td>
+        <td>{{frecuencia_region[0]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

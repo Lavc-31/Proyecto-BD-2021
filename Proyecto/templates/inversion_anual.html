@@ -1,0 +1,32 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inversión</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Monto</th>
+        <th>Año</th>
+      </tr>
+      {% for inversion_anual in inversion_anual %}
+      <tr>
+        <td>{{inversion_anual[0]}}</td>
+        <td>{{inversion_anual[1]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

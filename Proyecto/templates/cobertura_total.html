@@ -1,0 +1,32 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cobertura</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Empresa</th>
+        <th>Cobertura</th>
+      </tr>
+      {% for cobertura_total in cobertura_total %}
+      <tr>
+        <td>{{cobertura_total[0]}}</td>
+        <td>{{cobertura_total[1]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

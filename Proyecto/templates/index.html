@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>Proyecto</title>
+        <style type="text/css">
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            #header{
+                margin: auto;
+                width: 500px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            ul, ol{
+                list-style: none;
+            }
+
+            .nav li a {
+                background-color: rgb(0, 0, 0);
+                color: aliceblue;
+                text-decoration: none;
+                padding: 10px 15px;
+                display: block;
+            }
+            .nav li a:hover {
+                background-color: rgb(18, 48, 49);
+            }
+
+            .nav > li{
+                float: left;
+            }
+
+            .nav li ul{
+                display: none;
+                position: absolute;
+                min-width: 140px;
+            }
+
+            .nav li:hover > ul{
+                display: block;
+            }
+
+            .nav li ul li{
+                position: relative;
+            }
+
+            .nav li ul li ul{
+                 right: -140px;
+                 top: 0px;
+            }
+
+            #header {
+              position: absolute;
+              align-content: center;
+              margin-left: 540px;
+            }
+            body {
+              background-image: url("https://www.educaciontrespuntocero.com/wp-content/uploads/2020/12/PLANTI-POWER.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <ul class="nav">
+                <li><a href="">Antenas</a>
+                    <ul>
+                        <li><a href="">Cantidad de antenas por comuna</a>
+                            <ul class="antenas">
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-hospicio">Alto Hospicio</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-valparaiso">Valparaiso</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-pintana">La Pintana</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-niebla">Niebla</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-rosendo">San Rosendo</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-curacavi">Curacaví</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-linares">Linares</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-central">Estacion Central</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-angeles">Los Angeles</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-frutillar">Frutillar</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-santiago">Santiago</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-niunioa">Ñuñoa</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-montt">Puerto Montt</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-valdivia">Valdivia</a>
+                                <li><a href="http://127.0.0.1:5000/cant-antenas-coyhaique">Coyhaique</a>
+                            </ul>
+                        <li><a href="http://127.0.0.1:5000/antenas-en-cada-comuna">Cantidad de antenas en cada comuna</a>
+                        <li><a href="">Frecuencia de señal en una region</a>
+                           <ul class ="listado">
+                                <li><a href="http://127.0.0.1:5000/senal-arica">Arica y Parinacota</a>
+                                <li><a href="http://127.0.0.1:5000/senal-tarapaca">Tarapacá</a>
+                                <li><a href="http://127.0.0.1:5000/senal-antofagasta">Antofagasta</a>
+                                <li><a href="http://127.0.0.1:5000/senal-atacama">Atacama</a>
+                                <li><a href="http://127.0.0.1:5000/senal-coquimbo">Coquimbo</a>
+                                <li><a href="http://127.0.0.1:5000/senal-valparaiso">Valparaiso</a>
+                                <li><a href="http://127.0.0.1:5000/senal-santiago">Metropolitana de Santiago</a>
+                                <li><a href="http://127.0.0.1:5000/senal-lbo">Libertador Bernardo O´Higgins</a>
+                                <li><a href="http://127.0.0.1:5000/senal-maule">Maule</a>
+                                <li><a href="http://127.0.0.1:5000/senal-nuble">Ñuble</a>
+                                <li><a href="http://127.0.0.1:5000/senal-biobio">Biobío</a>
+                                <li><a href="http://127.0.0.1:5000/senal-araucania">La Araucanía</a>
+                                <li><a href="http://127.0.0.1:5000/senal-rios">Los Ríos</a>
+                                <li><a href="http://127.0.0.1:5000/senal-lagos">Los Lagos</a>
+                                <li><a href="http://127.0.0.1:5000/senal-aysen">Aysén</a>
+                                <li><a href="http://127.0.0.1:5000/senal-magallanes">Magallanes y la Antártica Chilena</a>
+                           </ul>
+                           <style type="text/css">
+                                .listado li{
+                                    right: -125px;
+                                    top: 0px;
+                                }
+                           </style>
+                        <li><a href="">Estado de las antenas</a>
+                          <ul class="estadoss">
+                              <li><a href="http://127.0.0.1:5000/operativas">Listado de operativas</a>
+                              <li><a href="http://127.0.0.1:5000/no-operativas">Listado de no operativas</a>
+                          </ul>
+                          <style type="text/css">
+                               .estadoss li{
+                                   right: -60px;
+                                   top: 0px;
+                               }
+                          </style>
+                        <li><a href="http://127.0.0.1:5000/frecuencia-mas-comun">Frecuencia más común por región</a>
+                        <li><a href="http://127.0.0.1:5000/antenas-op">Antenas operativas</a>
+                    </ul>
+
+                <li><a href="">Empresas</a>
+                    <ul>
+                        <li><a href="">Antenas total de una empresa</a>
+                            <ul class="companias">
+                                <li><a href="http://127.0.0.1:5000/antenas-will">Will</a>
+                                <li><a href="http://127.0.0.1:5000/antenas-virgin">Virgin mobile</a>
+                                <li><a href="http://127.0.0.1:5000/antenas-wom">WOM</a>
+                                <li><a href="http://127.0.0.1:5000/antenas-claro">Claro</a>
+                                <li><a href="http://127.0.0.1:5000/antenas-movistar">Movistar</a>
+                                <li><a href="http://127.0.0.1:5000/antenas-entel">Entel</a>
+                            </ul>
+                        <li><a href="http://127.0.0.1:5000/antenas-totales-de-cada-empresa">Detalle de antenas</a>
+                        <li><a href="http://127.0.0.1:5000/inversion-anual">Inversión anual</a>
+                        <li><a href="http://127.0.0.1:5000/empresa-antenoide">Empresa con más antenas</a>
+                        <li><a href="http://127.0.0.1:5000/cobertura-total">Cobertura de cada empresa en metros</a>
+                        <li><a href="http://127.0.0.1:5000/inversion-empresarial">Empresa que más invierte</a>
+                        <li><a href="http://127.0.0.1:5000/empresa-menor-cobertura">Empresa con menor cobertura</a>
+                    </ul>
+
+                <li><a href="">Zonas</a>
+                    <ul>
+                        <li><a href="">Región con más antenas según el año</a>
+                            <ul class="anios">
+                                <li><a href="http://127.0.0.1:5000/a-1999">1999</a>
+                                <li><a href="http://127.0.0.1:5000/a-2000">2000</a>
+                                <li><a href="http://127.0.0.1:5000/a-2002">2002</a>
+                                <li><a href="http://127.0.0.1:5000/a-2003">2003</a>
+                                <li><a href="http://127.0.0.1:5000/a-2004">2004</a>
+                                <li><a href="http://127.0.0.1:5000/a-2005">2005</a>
+                                <li><a href="http://127.0.0.1:5000/a-2006">2006</a>
+                                <li><a href="http://127.0.0.1:5000/a-2007">2007</a>
+                                <li><a href="http://127.0.0.1:5000/a-2011">2011</a>
+                                <li><a href="http://127.0.0.1:5000/a-2012">2012</a>
+                                <li><a href="http://127.0.0.1:5000/a-2015">2015</a>
+                                <li><a href="http://127.0.0.1:5000/a-2016">2016</a>
+                                <li><a href="http://127.0.0.1:5000/a-2017">2017</a>
+                                <li><a href="http://127.0.0.1:5000/a-2018">2018</a>
+                                <li><a href="http://127.0.0.1:5000/a-2019">2019</a>
+                                <li><a href="http://127.0.0.1:5000/a-2020">2020</a>
+                                <li><a href="http://127.0.0.1:5000/a-2021">2021</a>
+                            </ul>
+                            <style type="text/css">
+                                 .anios li{
+                                  text-align: center;
+                                 }
+                            </style>
+                        <li><a href="http://127.0.0.1:5000/censo">Cantidad de habitantes por zona</a>
+                           <style type="text/css">
+                                .listadosdos li{
+                                    right: -125px;
+                                    top: 0px;
+                            }
+                            </style>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

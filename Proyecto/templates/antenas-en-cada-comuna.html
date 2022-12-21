@@ -1,0 +1,32 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Antenas por comuna</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Comuna</th>
+        <th>Antenas</th>
+      </tr>
+      {% for antenasXcomuna in antenasXcomuna %}
+      <tr>
+        <td>{{antenasXcomuna[1]}}</td>
+        <td>{{antenasXcomuna[0]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

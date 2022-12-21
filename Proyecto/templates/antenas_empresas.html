@@ -1,0 +1,32 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Empresa</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Antenas</th>
+        <th>Empresa</th>
+      </tr>
+      {% for antenas_empresas in antenas_empresas %}
+      <tr>
+        <td>{{antenas_empresas[0]}}</td>
+        <td>{{antenas_empresas[1]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
